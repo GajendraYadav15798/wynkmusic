@@ -1,0 +1,75 @@
+ul{
+    display: flex;
+    gap:6px;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 4rem;
+    
+}
+ul li a{
+color: lightgray;
+text-decoration: none;
+
+}
+ul li select{
+    background-color: gray;
+    text-decoration: none;
+    
+    
+   
+}
+
+ul li{
+    padding: 25px;
+    font-size: 18px;
+    padding-bottom: 0px;
+   padding-top: 0px;
+   
+}
+
+ul li:hover{
+    text-decoration: underline;
+
+}
+
+ul li select:hover{
+    text-decoration: underline;
+    font-size: 18px;
+}
+.all{
+    color: white;
+    font-size: 22px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    ul {
+      display: block; /* Change to block layout */
+      margin: 0; /* Remove margin */
+      padding: 0; /* Remove padding */
+    }
+  
+    ul li {
+      padding: 15px; /* Adjust padding */
+      font-size: 16px; /* Adjust font size */
+    }
+  
+    ul li select {
+      width: 100%; /* Set width to full */
+      margin-top: 10px; /* Adjust margin-top */
+    }
+  
+    .all {
+      font-size: 18px; /* Adjust font size */
+    }
+  }
+  .secondaryNavbar{
+    margin-top: 4%;
+    position: fixed;
+    background-color: black;
+    z-index: 900;
+    width: 100%;
+    /* margin-top: -5px; */
+  }

@@ -1,0 +1,84 @@
+import React, { useState, useEffect } from 'react';
+import Slider from 'react-slick';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const Banner = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    centerMode: !isMobile,
+    variableWidth: !isMobile,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+          variableWidth: false,
+        },
+      },
+    ],
+  };
+
+  const imageStyle = {
+    borderRadius: '20px',
+    margin: isMobile ? '0 5px' : '0 10px',
+    marginTop: '50px',
+    marginBottom: '50px',
+    maxWidth: '100%', // Ensure images don't overflow container
+    height: 'auto', // Maintain aspect ratio
+  };
+
+  return (
+    <div className='barapp' style={{ background: 'black', position: 'relative', top: '95px' }}>
+      <Slider {...settings}>
+        <div>
+        <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/66473ee5d83710614a01960f/BANNER_34474852554275.png" alt="" style={imageStyle} />
+        </div>
+        <div>
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/660fd3c5b4f9e115a0f6c48a/BANNER_162814980521707.jpeg" alt="" style={imageStyle} />
+        </div>
+        <div>
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/tile/artwork/1715685769096_love-stories-featuredbanner_(2).jpg" alt="" style={imageStyle} />
+        </div>
+        <div>
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/6644e5be91b67d235ff5e14a/BANNER_11470242512816.jpg" alt="" style={imageStyle} />
+        </div>
+        <div>
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/tile/artwork/1715685769096_love-stories-featuredbanner_(2).jpg" alt="" style={imageStyle} />
+        </div>
+        <div>
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/66472a000f66cb65a814cf98/BANNER_1215667227517430.jpg" alt="" style={imageStyle} />
+        </div>
+        <div>
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/tile/artwork/1715771195261_full-album-featuredbanner_(6).jpg" alt="" style={imageStyle} />
+        </div>
+      </Slider>
+    </div>
+  );
+};
+
+export default Banner;
+

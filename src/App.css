@@ -1,38 +1,414 @@
-.App {
-  text-align: center;
-}
+/* Assuming you have a CSS file linked to your React component */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-main-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #1a1a1ae6;
+  color: white;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: black;
+}
+
+.newSong {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.log {
+  display: flex;
+  cursor: pointer;
+}
+
+.log img {
+  margin-top: 15px;
+  margin-left: 126px;
+  cursor: pointer;
+}
+
+.appSearchNavbar {
+  margin-left: 24%;
+  margin-top: 25px;
+  height: 80px;
+  /* width: 300px; */
+  cursor: pointer;
+}
+
+.searchIcon-navbar img {
+  position: absolute;
+  top: -31px;
+  margin-left: 10px;
+}
+
+.appSearchNavbar input {
+  width: 314px;
+  height: 36px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: -4px;
+  padding-left: 21px;
+  background: #1a1a1a00;
+  border: 1px solid lightgrey;
+  font-size: 20px;
+}
+
+.login {
+  margin-left: 10px;
+}
+
+.Manage_Subscription {
+  margin-left: 68px;
+  margin-top: 27px;
+}
+
+.Manage_Subscription span {
+  margin-top: 25px;
+  padding: 7px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.login {
+  margin-top: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.line {
+  margin-top: 7px;
+  margin-left: 15px;
+  margin-top: 18px;
+}
+
+.music {
+  margin-top: 30px;
+  margin-left: -60px;
+  height: 88px;
+  width: 88px;
+  font-weight: 100px;
+  cursor: pointer;
+}
+
+.person {
+  margin-top: 30px;
+  margin-left: -50px;
+  cursor: pointer;
+}
+
+/* home page css */
+
+.music-file {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+.musicCard {
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 50px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.music-player {
+  bottom: 0;
+  margin-left: 0%;
+  width: 100%;
+  height: 5rem;
+  background-color: #ceb86a;
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10px;
+  position: fixed;
+  background-image: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #9400d3
+  );
+  background-size: 600% 600%;
+  animation: disco-light 1s infinite alternate;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes disco-light {
+  0% {
+    background-position: 0% 0%;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    background-position: 100% 100%;
   }
 }
+
+
+.artist {
+  font-size: 14px;
+  width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white;
+  font-weight: 600;
+}
+
+.music-title {
+  font-size: 16px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.list-group {
+  list-style: none;
+  list-style-type: none;
+}
+
+.list-group-item {
+  color: #eef3f8;
+  list-style: none;
+}
+
+Link {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 80px;
+  padding-bottom: 10px;
+  background: #3b0909;
+  max-width: 600px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.text {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.underline {
+  width: 61px;
+  height: 6px;
+  background: #3c009d13;
+  border-radius: 9px;
+}
+
+.inputs {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input {
+  display: flex;
+  width: 100%;
+  max-width: 480px;
+  height: 80px;
+  align-items: center;
+  margin: auto;
+  border-radius: 6px;
+  background: #eaeaea;
+}
+
+.input img {
+  margin: 0 30px;
+}
+
+.input input {
+  flex: 1;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  color: #c3000013;
+}
+
+.forgot_password {
+  padding-left: 62px;
+  margin-top: 27px;
+  color: red;
+  font-size: 18px;
+}
+
+.forgot_password span {
+  color: rgb(179, 101, 0);
+  cursor: pointer;
+}
+
+.submit_container {
+  display: flex;
+  gap: 30px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 59px;
+  color: #fff;
+  background: #7ded1ba8;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 59px;
+  color: #fff;
+  background: #95000000;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.music-container {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+/* Assuming you have a CSS file linked to your React component */
+
+/* Add this media query to target smaller screens */
+@media only screen and (max-width: 768px) {
+  .navbar-main-container {
+    height: auto;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .log img {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 82px; /* Remove margin-left */
+  }
+
+  .appSearchNavbar {
+    margin-left: 0; /* Remove margin-left */
+    margin-top: 10px; /* Adjust margin-top */
+    width: 50%; /* Adjust width */
+  }
+
+  .searchIcon-navbar img {
+    top: -21px; /* Adjust top position */
+    margin-left: 5px; /* Adjust margin-left */
+  }
+
+  .appSearchNavbar input {
+    margin-top: 5px; /* Adjust margin-top */
+    width: 220px;
+  }
+
+  .Manage_Subscription {
+    margin-left: 0; /* Remove margin-left */
+    margin-top: 10px; /* Adjust margin-top */
+    text-align: center; /* Center align */
+  }
+
+  .login {
+    margin-top: 5px; /* Adjust margin-top */
+    font-size: 14px; /* Adjust font-size */
+  }
+
+  .line {
+    margin-top: 5px; /* Adjust margin-top */
+  }
+
+  .music {
+    margin-top: 20px; /* Adjust margin-top */
+    margin-left: 0; /* Remove margin-left */
+    font-size: 14px; /* Adjust font-size */
+  }
+
+  .person {
+    margin-top: 20px; /* Adjust margin-top */
+    margin-left: 0; /* Remove margin-left */
+  }
+
+  .container {
+    margin-top: 20px; /* Adjust margin-top */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .header {
+    gap: 10px; /* Adjust gap */
+  }
+
+  .text {
+    font-size: 24px; /* Adjust font-size */
+  }
+
+  .underline {
+    width: 50px; /* Adjust width */
+  }
+
+  .inputs {
+    margin-top: 30px; /* Adjust margin-top */
+    gap: 15px; /* Adjust gap */
+  }
+
+  .input {
+    height: auto; /* Set height to auto */
+    padding: 10px; /* Adjust padding */
+    border-radius: 6px;
+  }
+
+  .input img {
+    margin: 0 15px; /* Adjust margin */
+  }
+
+  .forgot_password {
+    padding-left: 0; /* Remove padding-left */
+    margin-top: 20px; /* Adjust margin-top */
+    font-size: 16px; /* Adjust font-size */
+  }
+
+  .submit_container {
+    flex-direction: column; /* Change to column layout */
+    gap: 15px; /* Adjust gap */
+    margin-left: 0; /* Remove margin-left */
+    margin-top: 30px; /* Adjust margin-top */
+  }
+
+  .submit,
+  .submit-1 {
+    width: 100%; /* Set width to full */
+  }
+}
+
+/* Rest of your CSS styles remain unchanged */
