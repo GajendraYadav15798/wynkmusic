@@ -47,7 +47,7 @@ function Library() {
                {error && <div>Error: {error.message}</div>} {/* Display error message if error state is set */}
                {getList.map((obj,index) => {
                   return (
-                     <div key={index} className="musicCard" style={{marginTop:'180px'}}>
+                     <div key={index} className="musicCard" style={{marginTop:'170px',marginBottom:'95px'}}>
                         <img
                            src={obj.thumbnail}
                            height={"150"}
@@ -56,13 +56,16 @@ function Library() {
                            className="bannerImg"
                            alt=""
                         />
-                        <div className="music-title">
+                        <div className="music-title" >
                            {obj.title} 
                            <span onClick={() => deleteHandler(obj._id)}>
-                              <IconContext.Provider value={{ color: 'red', size: '18px' }}>
-                                 <RiDeleteBin2Fill style={{fontSize:'25px'}}/>
-                              </IconContext.Provider>
+                              
+                             <div style={{marginLeft:'10px',marginTop:'10px',cursor:'pointer'}}>
+                             <button style={{color:'white',width:'100px',height:'30px',borderRadius:'15px',background:'red'}}>Delete</button>
+                             </div>
+                           
                            </span>
+                           
                         </div>
                      </div>
                   );

@@ -71,7 +71,7 @@ function Romantics() {
     return (
        <>
         <div className='romantics' style={containerStyle}>
-        <h1 style={{color:'gray',marginLeft:'10px',fontStyle:'italic'}}>Romantic Songs</h1>
+        <h1 style={{color:'rgba(247, 245, 245)',marginLeft:'10px',fontWeight:'500' }}>Romantic Songs</h1>
         <Carousel
             responsive={responsive}
             infinite={true}

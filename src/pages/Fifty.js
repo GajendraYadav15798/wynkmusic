@@ -70,7 +70,7 @@ const Fifty = () => {
 
     return (
         <>
-            <h1 style={{ color: 'gray', marginLeft: containerStyle.marginLeft,fontStyle:'italic' }}>Top 50 of this month</h1>
+            <h1 style={{ color: 'rgba(247, 245, 245)', marginLeft: containerStyle.marginLeft,fontWeight:'400' }}>Top 50 </h1>
             <div className="new" style={containerStyle}>
                 <Carousel
                     responsive={responsive}

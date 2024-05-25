@@ -80,7 +80,7 @@ const TwentySongs = () => {
 
     return (
         <>
-            <h1 style={{ color: 'gray', marginLeft: '150px',fontStyle:'italic' }}>Top 20 of this month</h1>
+            <h1 style={{ color: 'rgba(247, 245, 245)', marginLeft: '150px',fontWeight:'500'  }}>Top 20 </h1>
             <div className='twenty' style={{ marginLeft: '150px', marginRight: '150px', position: 'relative' }}>
                 <Carousel
                     ref={carouselRef}

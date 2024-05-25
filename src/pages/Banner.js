@@ -61,19 +61,19 @@ const Banner = () => {
           <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/660fd3c5b4f9e115a0f6c48a/BANNER_162814980521707.jpeg" alt="" style={imageStyle} />
         </div>
         <div>
-          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/tile/artwork/1715685769096_love-stories-featuredbanner_(2).jpg" alt="" style={imageStyle} />
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/665053bc34a219283eb58d0e/BANNER_20423215653118.jpg" alt="" style={imageStyle} />
         </div>
         <div>
-          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/6644e5be91b67d235ff5e14a/BANNER_11470242512816.jpg" alt="" style={imageStyle} />
-        </div>
-        <div>
-          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/tile/artwork/1715685769096_love-stories-featuredbanner_(2).jpg" alt="" style={imageStyle} />
-        </div>
-        <div>
-          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/66472a000f66cb65a814cf98/BANNER_1215667227517430.jpg" alt="" style={imageStyle} />
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/665069fa5c3d3b2ab05d7f90/BANNER_26157792887009.png" alt="" style={imageStyle} />
         </div>
         <div>
           <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/tile/artwork/1715771195261_full-album-featuredbanner_(6).jpg" alt="" style={imageStyle} />
+        </div>
+        <div>
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/665053bc34a219283eb58d0e/BANNER_20423215653118.jpg" alt="" style={imageStyle} />
+        </div>
+        <div>
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/665058d8d5643d32b813759e/BANNER_9185336311950.jpg" alt="" style={imageStyle} />
         </div>
       </Slider>
     </div>

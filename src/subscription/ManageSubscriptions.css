@@ -1,233 +1,105 @@
-.manage-subscriptions-container {
-  color: white;
-  padding: 20px;
+/* ManageSubscriptions.css */
+
+.subscription-container {
   max-width: 600px;
   margin: 0 auto;
-     
-  
-
-}
-
-.manage-subscriptions-container {
-  border: 2px solid transparent; /* Initial transparent border */
-  border-radius: 20px; /* Rounded corners */
-  padding: 40px;
-  position: relative; /* Required for absolute positioning of pseudo-element */
-}
-
-/* Keyframes for disco light effect */
-@keyframes disco {
-  0% { border-color: #ff0000; } /* Red */
-  25% { border-color: #00ff00; } /* Green */
-  50% { border-color: #0000ff; } /* Blue */
-  75% { border-color: #ffff00; } /* Yellow */
-  100% { border-color: #ff00ff; } /* Magenta */
-}
-
-/* Apply animation to border */
-.manage-subscriptions-container::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
+  margin-top: 145px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #0C0F12;
   border-radius: 10px;
-  border: 2px solid transparent; /* Initial transparent border */
-  animation: disco 2s infinite; /* Animate border color infinitely */
-}
-
-.premium-header {
   text-align: center;
-  margin-bottom: 20px;
-}
-
-.crown-logo {
-  width: 50px; /* Adjust as needed */
-  height: auto;
-  background: black;
-  padding: 5px;
-  border-radius: 50%;
-}
-
-.crown-logo img {
-  width: 100%;
-  height: auto;
-}
-
-.manage-subscriptions-header {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.manage-subscriptions-options {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  align-items: center; /* Center vertically */
+  color: white;
+  font-weight: 300;
+}
+
+.logo-container {
+  margin-top: -250px;
+  position: relative;
+  left: 120px;
+}
+
+.wynk-logo {
+  width: 250px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 155px;
+}
+
+.subscription-content {
+  flex: 2;
+  text-align: center;
+  font-weight: 400;
+  
+}
+
+.subscription-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-weight: 400;
 }
 
 .subscription-option {
-  background-color: #333;
-  color: white;
+  flex: 1;
   padding: 20px;
-  flex: 1; /* Distribute available space evenly */
-  text-align: center;
-  border-radius: 12px; /* Add border radius */
-  cursor: pointer;
-  border: 2px solid red;
-  margin-right: 10px; /* Add margin-right */
-}
-
-.subscription-option:hover {
-  background-color: #555;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #21252D;
+  font-weight: 400;
 }
 
 .subscription-option h3 {
+  font-size: 24px;
   margin-bottom: 10px;
+  font-weight: 400;
 }
 
 .subscription-option p {
-  margin-bottom: 5px;
-}
-
-.subscription-option .original-price {
-  text-decoration: line-through;
-}
-
-.tick-mark {
-  font-size: 24px;
-  color: green;
-}
-
-.manage-subscriptions-details {
-  font-size: 16px;
-}
-
-.manage-subscriptions-details strong {
-  font-weight: bold;
-}
-
-.manage-subscriptions-benefits {
+  font-size: 18px;
   margin-bottom: 20px;
 }
 
-.manage-subscriptions-benefits ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.manage-subscriptions-benefits li {
-  margin-bottom: 5px;
-}
-
-.manage-subscriptions-continue {
-  background-color: #4caf50;
-  color: white;
+.subscription-option button {
+  background-color: #FF3E62;
+  color: #fff;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: 400;
 }
 
-.best-value {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border: 1px solid red;
-  padding: 5px 10px;
-  border-radius: 5px;
+.subscription-option button:hover {
+  background-color: #0056b3;
 }
-.benefits-table {
-  width: 100%;
-  border-collapse: collapse;
+
+.premium-info {
   margin-top: 20px;
-}
-
-.benefits-table th,
-.benefits-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
-}
-
-.benefits-table th {
-  background-color: #333;
-  color: white;
-}
-
-.manage-subscriptions-continue {
-  background-color: blue;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 15px;
-  cursor: pointer;
-  float: right;
-  height: 40px;
-  width: 144px; /* Align the button to the right */
-}
-
-.payment-info-box {
-  background-color: #1F272B;
-  border: 1px solid #fff; /* Add border */
-  padding: 20px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between; /* Align items horizontally with space between */
-  margin-top: 25px;
-  border-radius: 25px;
-}
-
-.payment-info-box p {
-  color: #fff;
-  margin: 0;
-}
-.additional-info {
-  margin-top: 20px;
-  color: #fff;
-}
-
-.additional-info {
-  margin-top: 20px;
-  color: #fff;
-}
-
-.additional-info p {
-  font-size: 24px;
-  font-family: Arial, sans-serif;
-  margin-bottom: 10px;
-  border-bottom: 1px solid gray;
-  border-right: 1px solid gray;
-  border-left: 1px solid gray;
-}
-
-.additional-info p strong {
-  font-weight: bold;
+  font-style: italic;
+  font-weight: 400;
 }
 
 
 
-@media (max-width: 600px) {
-  .manage-subscriptions-container {
-    padding: 10px;
-  }
-
-  .manage-subscriptions-header {
-    font-size: 20px;
-  }
-
-  .manage-subscriptions-options {
+@media only screen and (max-width: 768px) {
+  .subscription-container {
+    max-width: 80%; 
+    margin-top: 100px; 
+    margin-bottom: 20px; 
     flex-direction: column;
   }
 
-  .manage-subscriptions-options .subscription-option {
-    flex-basis: auto;
-    margin-bottom: 10px;
-    margin-right: 0; /* Reset margin-right */
+  .logo-container {
+    margin-top: 0; 
+    left: 0; 
+    margin-bottom: 20px; 
+  }
+
+  .wynk-logo {
+    margin-left: auto; 
+    margin-right: auto; 
   }
 }

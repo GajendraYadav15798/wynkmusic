@@ -41,14 +41,15 @@ const MusicPlayer = (props) => {
         alt=""
       />
       <div className="music-title">{title}</div>
-      <audio controls src={audio_url}  style={{width:"100%"}}/>
+      <audio controls src={audio_url}  style={{width:"80%"}}/>
       <span style={{ 
         backgroundColor: getWatchList ? "red" : "gray", 
         borderRadius: "50%", 
         padding: "5px",
         backgroundImage: "linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3)",
         backgroundSize: "600% 600%",
-        animation: "disco-light 1s infinite alternate"
+        animation: "disco-light 1s infinite alternate",
+        zIndex:'500'
       }}>
       
   <CiHeart style={{ color: "white",fontSize:'26px' }} />

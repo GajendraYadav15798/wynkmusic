@@ -76,6 +76,7 @@ function Topfifty() {
             fontSize: "45px",
             marginLeft: "550px",
             marginTop: "-350px",
+            fontWeight:'300'
           }}
         >
           Peg Banade
@@ -86,11 +87,12 @@ function Topfifty() {
             fontSize: "20px",
             marginLeft: "550px",
             marginTop: "-25px",
+            fontWeight:'400'
           }}
         >
           Peg Banade
         </h5>
-        <p style={{ marginLeft: "550px", marginTop: "-25px", color: "gray" }}>
+        <p style={{ marginLeft: "550px", marginTop: "-25px", color: "gray" ,fontWeight:'300'}}>
           02:12 • Bajao Gaana Studios
         </p>
         <button
@@ -110,7 +112,7 @@ function Topfifty() {
             style={{ marginLeft: "5px", color: "white", marginRight: "25px" }}
           />{" "}
           {/* Play icon */}
-          <span style={{ fontSize: "25px", color: "white" }}>Play Songs</span>
+          <span style={{ fontSize: "25px", color: "white",fontWeight:'300' }}>Play Songs</span>
         </button>
         <button
           style={{
@@ -128,7 +130,7 @@ function Topfifty() {
             border: "1px solid white",
           }}
         >
-          <span style={{ marginRight: "5px", fontSize: "25px" }}>Follow</span>
+          <span style={{ marginRight: "5px", fontSize: "25px",fontWeight:'400' }}>Follow</span>
         </button>
     
         <RiDownload2Line
@@ -269,6 +271,7 @@ function Topfifty() {
             height: "50px",
             width: "145px",
             marginBottom: "30px",
+            fontWeight:'300'
           }}
         >
           Show More

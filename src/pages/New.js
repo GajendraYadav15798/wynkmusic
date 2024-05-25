@@ -68,7 +68,7 @@ const New = () => {
 
     return (
         <>
-            <h1 style={{ color: 'gray', marginLeft: '150px',fontStyle:'italic' }}>Trending Songs</h1>
+            <h1 style={{ color: 'rgba(247, 245, 245)', marginLeft: '150px',fontWeight:'500'  }}>Trending Songs</h1>
             <div style={containerStyle}>
                 <Slider {...settings}>
                     {getData.map((obj, index) => (

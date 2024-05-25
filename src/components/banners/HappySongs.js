@@ -43,7 +43,7 @@ function Trending() {
         <p
           style={{
             color: "#818A8C",
-            fontSize: "18px",
+            fontWeight: '400',
             marginLeft: "10px",
             marginTop: "-25px",
             marginLeft: "155px",
@@ -51,30 +51,30 @@ function Trending() {
         >
           Home<span style={{ fontSize: "55px" }}>.</span>
           <span
-            style={{ marginLeft: "20px", color: "#818A8C", marginLeft: "15px" }}
+            style={{ marginLeft: "20px", color: "#818A8C", marginLeft: "15px",fontWeight: '400' }}
           >
             Playlists
           </span>
           <span style={{ marginLeft: "20px", color: "#818A8C" }}>
-            <span style={{ fontSize: "55px" }}>.</span>Wynk Top 50
+            <span style={{ fontWeight: '400' }}>.</span>Wynk Top 50
           </span>
           <br />
           <img src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/00602547587459_20240227155540404/1709054723971/15UMGIM59807_T1_cvrart.jpg" style={{marginTop:'75px',height:'395px',borderRadius:'5px'}}/>
         </p>
-        <h1 style={{ color: "#FFFFFF", fontSize: "45px", marginLeft: "650px",marginTop:'-350px' }}>
+        <h1 style={{ color: "#FFFFFF", fontWeight: '300', marginLeft: "650px",marginTop:'-350px' }}>
         What Do You Mean?
         </h1>
         <h5
           style={{
             color: "#818A8C",
-            fontSize: "20px",
+            fontWeight: '400',
             marginLeft: "650px",
             marginTop: "-25px",
           }}
         >
         Purpose
         </h5>
-        <p style={{ marginLeft: "650px", marginTop: "-25px", color: "gray" }}>
+        <p style={{ marginLeft: "650px", marginTop: "-25px", color: "gray",fontWeight: '400' }}>
         03:25 • RBMG/Def Jam
         </p>
         <button
@@ -94,7 +94,7 @@ function Trending() {
             style={{ marginLeft: "5px", color: "white", marginRight: "25px" }}
           />{" "}
           {/* Play icon */}
-          <span style={{ fontSize: "25px", color: "white" }}>Play Songs</span>
+          <span style={{ fontSize: "25px", color: "white",fontWeight: '400' }}>Play Songs</span>
         </button>
         <button
           style={{

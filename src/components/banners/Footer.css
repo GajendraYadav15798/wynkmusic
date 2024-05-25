@@ -3,7 +3,7 @@
     width: full;
     background-color: #0C0F12;
     padding: 72px;
-    padding-top: 145px;
+    padding-top: 120px;
    
   }
   
@@ -18,7 +18,7 @@
   .footer__one p{
     color: #7F8081;
   padding: 3px;
-  font-size: 20px;
+  font-weight: 400;
   
     
     }
@@ -26,7 +26,7 @@
       color: white;
       font-weight: bold;
       padding: 3px;
-      font-size: 27px;
+      font-weight: 400;
     }
     .music__logo{
       background-color: #21252D;
@@ -75,7 +75,7 @@
      }
      .heading{
       color: white;
-      font-size: 20px;
+      font-weight: 400;
       margin-top: 100px;
       
     }
@@ -99,7 +99,7 @@
     .raju{
       color: white;
       display: flex;
-      font-size: 20px;
+      font-weight: 400;
       margin-top: 100px;
       justify-content: space-evenly;
     }
@@ -108,7 +108,7 @@
     margin-right: 25px
   }
   .heading__one{
-    font-size: large;
+    font-weight: 400;
   }
   .last__list{
     color: white;
@@ -117,7 +117,7 @@
     margin-top: 25px;
   }
   .headings{
-   font-size: 20px;
+    font-weight: 400;
   }
   .word__one{
     color: #7F8081;
@@ -126,7 +126,7 @@
   .word__ones{
     margin-left: 25px;
     color: #7F8081;
-    font-size: 20px;
+    font-weight: 400;
   }
   
   .about {
@@ -141,8 +141,8 @@
       /* margin-top: 54px; */
       padding: 25px;
       cursor: pointer;
-      font-size: 15px;
-      margin-left: 9px;
+      font-weight: 400;
+      margin-left: -6px;
     
   }
   
@@ -228,7 +228,7 @@
   .word__one,
   .word__ones,
   .about {
-    font-size: 16px; /* Adjust font size for smaller screens */
+    font-weight: 400; /* Adjust font size for smaller screens */
   }
 
   .music__logo {

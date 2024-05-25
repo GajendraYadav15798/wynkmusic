@@ -71,7 +71,7 @@ function Artists() {
 
   return (
     <div style={containerStyle}>
-      <h1 style={{ color: "gray", textAlign: isMobile ? "center" : "left",fontStyle:'italic' }}>
+      <h1 style={{ color: 'rgba(247, 245, 245)', textAlign: isMobile ? "center" : "left",fontWeight:'500' }}>
         Top Artist
       </h1>
       <Carousel
@@ -83,6 +83,7 @@ function Artists() {
         removeArrowOnDeviceType={["tablet", "mobile"]} // Remove arrow on specified devices
         containerClass="carousel-container" // Custom container class name
         itemClass="carousel-item" // Custom item class name
+        
       >
         {getArtist.map((artist, index) => (
           <div key={index}>

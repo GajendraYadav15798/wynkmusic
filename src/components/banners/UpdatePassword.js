@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { TextField, Button, Typography, Snackbar } from '@mui/material';
 import MuiAlert from '@mui/material/Alert';
 import axios from 'axios';
+import { BorderClear } from '@mui/icons-material';
 
 function UpdatePassword() {
     const [formData, setFormData] = useState({
@@ -55,7 +56,7 @@ function UpdatePassword() {
     };
 
     const formStyle = {
-        background: 'gray',
+        background: '#f0e68c',
         color: 'black',
         width: '450px',
         marginLeft: 'auto',
@@ -66,18 +67,24 @@ function UpdatePassword() {
         marginTop: '130px',
         marginBottom: '50px',
         border: '5px solid',
-        animation: 'disco 2s infinite'
+        animation: 'disco 2s infinite',
+        borderRadius:'45px'
     };
 
     const inputStyle = {
-        marginBottom: '15px'
+        marginBottom: '15px',
+        borderRadius:'45px',
+        color:'white'
     };
 
     const buttonStyle = {
-        color: 'white',
-        backgroundColor: '#1976d2',
+        color: '#FFE2C3',
+        backgroundColor: '#FF245B',
         display: 'block',
-        width: '100%'
+        width: '195px',
+        borderRadius:'45px',
+        marginLeft:'135px',
+        
     };
 
     const snackbarStyle = {
@@ -86,20 +93,10 @@ function UpdatePassword() {
     };
 
     return (
-        <div>
-            <style>
-                {`
-                    @keyframes disco {
-                        0% { border-color: red; }
-                        25% { border-color: yellow; }
-                        50% { border-color: green; }
-                        75% { border-color: blue; }
-                        100% { border-color: red; }
-                    }
-                `}
-            </style>
+        <div style={{marginTop:'175px'}}>
+           
             <form onSubmit={handleSubmit} style={formStyle}>
-                <Typography variant="h6" style={{ color: 'black', textAlign: 'center' }}>Update Password</Typography>
+                <Typography variant="h6" style={{ color: '#ffffff', textAlign: 'center' ,fontWeight:'500',color:'#2f4f4f'}}>Update Password</Typography>
                 <TextField
                     label="Name"
                     name="name"
@@ -135,10 +132,11 @@ function UpdatePassword() {
                     fullWidth
                     margin="normal"
                     style={inputStyle}
+                    
                 />
                 <Button type="submit" variant="contained" style={buttonStyle}>Update Password</Button>
                 <Snackbar open={snackbarOpen} autoHideDuration={6000} onClose={handleSnackbarClose}>
-                    <MuiAlert onClose={handleSnackbarClose} severity={snackbarSeverity} sx={snackbarStyle}>
+                    <MuiAlert onClose={handleSnackbarClose} severity={snackbarSeverity} sx={snackbarStyle} style={{color:'#1B1B1C'}}>
                         {snackbarMessage}
                     </MuiAlert>
                 </Snackbar>

@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 
 function SecondaryNavbar() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHovere, setIsHovere] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -32,7 +34,7 @@ function SecondaryNavbar() {
               style={{
                 textDecoration: "none",
                 color: "gray",
-                fontSize: '14px',
+                fontWeight: "400",
               }}
             >
               All
@@ -44,7 +46,7 @@ function SecondaryNavbar() {
               style={{
                 textDecoration: "none",
                 color: "gray",
-                fontSize: '12px'
+                fontWeight: "400",
               }}
             >
               Trending
@@ -56,10 +58,10 @@ function SecondaryNavbar() {
               style={{
                 textDecoration: "none",
                 color: "gray",
-                fontSize: '14px'
+                fontWeight: "400",
               }}
             >
-              Top 20's Songs 
+              OldSongs
             </Link>
           </li>
           <li className="list-group-item">
@@ -68,59 +70,262 @@ function SecondaryNavbar() {
               style={{
                 textDecoration: "none",
                 color: "gray",
-                fontSize: '14px'
+                fontWeight: "400",
               }}
             >
-              Top 50's
+              NewSong
             </Link>
           </li>
-          
-          <li className="list-group-item">
+
+          <li
+            className="list-group-item"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            style={{ position: "relative" }}
+          >
             <Link
               to="/sad"
               style={{
                 textDecoration: "none",
                 color: "gray",
-                fontSize: '14px'
+                fontWeight: "400",
               }}
             >
-              Sad Songs
+              Moods&Genre
             </Link>
+            {isHovered && (
+              <ul
+                style={{
+                  position: "absolute",
+                  top: "100%",
+                  left: "0",
+                  backgroundColor: "#1A1919",
+                  listStyle: "none",
+                  padding: "10px",
+                  boxShadow: "0 2px 10px rgba(0,0,0,0.2)",
+                  zIndex: 1,
+                  display: "flex",
+                  flexDirection: "row",
+                  flexWrap: "wrap",
+                }}
+              >
+                <li
+                  style={{
+                    padding: "5px",
+                    flex: "1",
+                    backgroundColor: "#1A1919",
+                  }}
+                >
+                  <Link
+                    to="/party-songs"
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
+                    Party Songs
+                  </Link>
+                </li>
+                <li
+                  style={{
+                    padding: "5px",
+                    flex: "1",
+                    backgroundColor: "#1A1919",
+                  }}
+                >
+                  <Link
+                    to="/dance-songs"
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
+                    Dance Songs
+                  </Link>
+                </li>
+                <li
+                  style={{
+                    padding: "5px",
+                    flex: "1",
+                    backgroundColor: "#1A1919",
+                  }}
+                >
+                  <Link
+                    to="/bollywood-songs"
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
+                    Bollywood Songs
+                  </Link>
+                </li>
+                <li
+                  style={{
+                    padding: "5px",
+                    flex: "1",
+                    backgroundColor: "#1A1919",
+                  }}
+                >
+                  <Link
+                    to="/romantic-songs"
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
+                    Romantic Songs
+                  </Link>
+                </li>
+                <li
+                  style={{
+                    padding: "5px",
+                    flex: "1",
+                    backgroundColor: "#1A1919",
+                  }}
+                >
+                  <Link
+                    to="/90s-hits"
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
+                    90's Hits
+                  </Link>
+                </li>
+                <li
+                  style={{
+                    padding: "5px",
+                    flex: "1",
+                    backgroundColor: "#1A1919",
+                  }}
+                >
+                  <Link
+                    to="/ghazals"
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
+                    Ghazals
+                  </Link>
+                </li>
+                <li
+                  style={{
+                    padding: "5px",
+                    flex: "1",
+                    backgroundColor: "#1A1919",
+                  }}
+                >
+                  <Link
+                    to="/bhakti-songs"
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
+                    Bhakti Songs
+                  </Link>
+                </li>
+                <li
+                  style={{
+                    padding: "5px",
+                    flex: "1",
+                    backgroundColor: "#1A1919",
+                  }}
+                >
+                  <Link
+                    to="/lofi-songs"
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
+                    LoFI Songs
+                  </Link>
+                </li>
+              </ul>
+            )}
           </li>
-          <li className="list-group-item">
+          <li
+            className="list-group-item"
+            onMouseEnter={() => setIsHovere(true)}
+            onMouseLeave={() => setIsHovere(false)}
+            style={{ position: "relative" }}
+          >
             <Link
               to="/romantic"
               style={{
                 textDecoration: "none",
                 color: "gray",
-                fontSize: '14px'
+                fontWeight: "400",
               }}
             >
-              Romantic Song
+              Top Albums
             </Link>
+            {isHovere && (
+              <ul
+                style={{
+                  position: "absolute",
+                  top: "100%",
+                  left: "0",
+                  backgroundColor: "#1A1919",
+                  listStyle: "none",
+                  padding: "10px",
+                  boxShadow: "0 2px 10px rgba(0,0,0,0.2)",
+                  zIndex: 1,
+                  display: "flex",
+                  flexDirection: "row",
+                  flexWrap: "wrap",
+                }}
+              >
+                <li
+                  style={{
+                    padding: "5px",
+                    flex: "1",
+                    backgroundColor: "#1A1919",
+                  }}
+                >
+                  <Link
+                    to="/hindi "
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
+                    Top Hindi{" "}
+                  </Link>
+                </li>
+                <li
+                  style={{
+                    padding: "5px",
+                    flex: "1",
+                    backgroundColor: "#1A1919",
+                  }}
+                >
+                  <Link
+                    to="/ english"
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
+                    Top English{" "}
+                  </Link>
+                </li>
+                <li
+                  style={{
+                    padding: "5px",
+                    flex: "1",
+                    backgroundColor: "#1A1919",
+                  }}
+                >
+                  <Link
+                    to="/telugu"
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
+                    Top Telugu{" "}
+                  </Link>
+                </li>
+                <li
+                  style={{
+                    padding: "5px",
+                    flex: "1",
+                    backgroundColor: "#1A1919",
+                  }}
+                >
+                  <Link
+                    to="/tamil"
+                    style={{ textDecoration: "none", color: "gray" }}
+                  >
+                    Top Tamil{" "}
+                  </Link>
+                </li>
+              </ul>
+            )}
           </li>
-          <li className="list-group-item">
-            <Link
-              to="/romantic"
-              style={{
-                textDecoration: "none",
-                color: "gray",
-                fontSize: '14px'
-              }}
-            >
-              Romantic Song
-            </Link>
-          </li>
+
           <li className="list-group-item">
             <Link
               to="/happy"
               style={{
                 textDecoration: "none",
                 color: "gray",
-                fontSize: '14px'
+                fontWeight: "400",
               }}
             >
-              Happy Songs
+              HappySongs
             </Link>
           </li>
           <li className="list-group-item">
@@ -129,10 +334,10 @@ function SecondaryNavbar() {
               style={{
                 textDecoration: "none",
                 color: "gray",
-                fontSize: '14px'
+                fontWeight: "400",
               }}
             >
-              Favourite Song
+              FavouriteSong
             </Link>
           </li>
           <li className="list-group-item">
@@ -141,7 +346,7 @@ function SecondaryNavbar() {
               style={{
                 textDecoration: "none",
                 color: "gray",
-                fontSize: '14px'
+                fontWeight: "400",
               }}
             >
               Podcast
@@ -153,10 +358,10 @@ function SecondaryNavbar() {
               style={{
                 textDecoration: "none",
                 color: "gray",
-                fontSize: '14px'
+                fontWeight: "400",
               }}
             >
-              Update Password
+              UpdatePassword
             </Link>
           </li>
         </ul>

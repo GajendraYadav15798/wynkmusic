@@ -21,6 +21,7 @@ import UpdatePassword from "./components/banners/UpdatePassword";
 import ManageSubscriptions from "./subscription/ManageSubscriptions";
 import Podcast from "./components/banners/Podcast";
 import { useUser } from "./providers/UserProvider";
+import Search from "./components/banners/Search";
 
 function App() {
   const {setIsMobile}=useUser();
@@ -68,6 +69,7 @@ function App() {
             element={<ManageSubscriptions />}
           />
           <Route path="/podcast" element={<Podcast />} />
+          <Route path="/search" element={<Search />} />
         </Routes>
       </BrowserRouter>
 

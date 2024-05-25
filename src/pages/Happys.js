@@ -70,7 +70,7 @@ function Happys() {
     return (
         <>
             <div className='happys' style={containerStyle}>
-                <h1 style={{ color: 'gray', marginLeft: '8px',fontStyle:'italic' }}>Happy Songs</h1>
+                <h1 style={{ color: 'rgba(247, 245, 245)', marginLeft: '8px',fontWeight:'400'  }}>Happy Songs</h1>
                 <Carousel
                     responsive={responsive}
                     infinite={true}

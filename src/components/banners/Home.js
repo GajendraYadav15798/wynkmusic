@@ -81,7 +81,7 @@ function Home() {
     return (
         <>
             <Banner />
-            <h1 style={{ color: 'gray', marginLeft: '150px', marginTop: '90px', fontStyle:'italic' }}>New Songs</h1>
+            <h1 style={{ color: 'rgba(247, 245, 245)', marginLeft: '150px', marginTop: '90px',fontWeight:'500'  }}>New Songs</h1>
             <div className="home" style={{ marginLeft: isMobile ? '20px' : '120px', marginRight: isMobile ? '20px' : '120px' }}>
                 <Carousel
                     responsive={responsive}

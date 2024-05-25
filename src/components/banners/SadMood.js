@@ -57,7 +57,7 @@ function SadMood() {
             Playlists
           </span>
           <span style={{ marginLeft: "20px", color: "#818A8C" }}>
-            <span style={{ fontSize: "55px" }}>.</span>Wynk Top 20
+            <span style={{ fontWeight:'300' }}>.</span>Wynk Top 20
           </span>
           <br />
           <img
@@ -78,6 +78,7 @@ function SadMood() {
             fontSize: "45px",
             marginLeft: "550px",
             marginTop: "-350px",
+            fontWeight:'300'
           }}
         >
         Boy with Luv (English Version)
@@ -88,6 +89,7 @@ function SadMood() {
             fontSize: "20px",
             marginLeft: "550px",
             marginTop: "-25px",
+            fontWeight:'300'
           }}
         >
          EMMA HEESTERS
@@ -271,6 +273,8 @@ function SadMood() {
             height: "50px",
             width: "145px",
             marginBottom: "30px",
+            fontWeight:'300',
+            color:'white'
           }}
         >
           Show More

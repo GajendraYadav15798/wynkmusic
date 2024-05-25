@@ -70,7 +70,7 @@ function Sads() {
 
     return (
         <>
-            <h1 style={{ color: 'gray', marginLeft: '150px',fontStyle:'italic' }}>Sad Songs</h1>
+            <h1 style={{ color: 'rgba(247, 245, 245)', marginLeft: '150px',fontWeight:'500'  }}>Sad Songs</h1>
             <div className='sads' style={containerStyle}>
                 <Carousel
                     centerMode={true}

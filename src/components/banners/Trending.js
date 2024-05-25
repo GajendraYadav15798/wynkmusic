@@ -60,7 +60,7 @@ function Trending() {
           <br />
           <img src="https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf90b047ae38c3e33a1cad.jpg" style={{marginTop:'75px',height:'395px',borderRadius:'15px'}}/>
         </p>
-        <h1 style={{ color: "#FFFFFF", fontSize: "45px", marginLeft: "650px",marginTop:'-350px' }}>
+        <h1 style={{ color: "#FFFFFF",  marginLeft: "650px",marginTop:'-350px',fontWeight: '400' }}>
           Wynk Trending Songs
         </h1>
         <h5
@@ -73,7 +73,7 @@ function Trending() {
         >
           Made by Wynk
         </h5>
-        <p style={{ marginLeft: "650px", marginTop: "-25px", color: "gray" }}>
+        <p style={{ marginLeft: "650px", marginTop: "-25px", color: "gray",fontWeight: '400' }}>
           44.5 L Followers • 100 Songs • 6 h 34 min
         </p>
         <button
@@ -93,7 +93,7 @@ function Trending() {
             style={{ marginLeft: "5px", color: "white", marginRight: "25px" }}
           />{" "}
           {/* Play icon */}
-          <span style={{ fontSize: "25px", color: "white" }}>Play Songs</span>
+          <span style={{ fontSize: "25px", color: "white",fontWeight: '400' }}>Play Songs</span>
         </button>
         <button
           style={{
@@ -112,7 +112,7 @@ function Trending() {
           }}
         >
           <span style={{ fontSize: "45px", marginRight: "15px" }}>+</span>
-          <span style={{ marginRight: "5px", fontSize: "25px" }}>Follow</span>
+          <span style={{ marginRight: "5px", fontSize: "25px",fontWeight: '400'}}>Follow</span>
         </button>
         <RiDownload2Line
           style={{
@@ -184,7 +184,7 @@ function Trending() {
           height:'56px',
           width:'186px',
           fontSize:'26px',
-          marginBottom:'45px',color:'white'
+          marginBottom:'45px',color:'white',fontWeight: '400'
         }}
        
       >

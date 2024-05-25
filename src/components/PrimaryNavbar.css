@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+ 
 }
 
 .logo-container {
@@ -89,26 +90,26 @@
   }
   
   .brand-name {
-    font-size: 24px;
+    font-weight: 300;
   }
   
   .search-input {
     width: 400px;
-    font-size: 20px;
+    font-weight: 300;
   }
   
   .search-icon {
-    font-size: 24px;
+    font-weight: 300;
   }
   
   .rupee-icon,
   .user-icon,
   .menu-icon {
-    font-size: 20px;
+    font-weight: 300;
   }
   
   .login-signup {
-    font-size: 24px;
+    font-weight: 300;
   }
 }
 
@@ -120,7 +121,7 @@
   }
   
   .brand-name {
-    font-size: 20px;
+    font-weight: 300;
   }
   
   .search-input {
@@ -129,13 +130,13 @@
   }
   
   .search-icon {
-    font-size: 20px;
+    font-weight: 300;
   }
   
   .rupee-icon,
   .user-icon,
   .menu-icon {
-    font-size: 16px;
+    font-weight: 300;
   }
   
   .subscription-text,

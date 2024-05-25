@@ -49,12 +49,12 @@ function Toptwenty() {
     >
       Home<span style={{ fontSize: "55px" }}>.</span>
       <span
-        style={{ marginLeft: "20px", color: "#818A8C", marginLeft: "15px" }}
+        style={{ marginLeft: "20px", color: "#818A8C", marginLeft: "15px",fontWeight:'300' }}
       >
         Playlists
       </span>
       <span style={{ marginLeft: "20px", color: "#818A8C" }}>
-        <span style={{ fontSize: "55px" }}>.</span>Wynk Top 20
+        <span style={{ fontSize: "55px",fontWeight:'300' }}>.</span>Wynk Top 20
       </span>
       <br />
       <img
@@ -73,8 +73,8 @@ function Toptwenty() {
     <h1
       style={{
         color: "#FFFFFF",
-        fontSize: "45px",
-        marginLeft: "-400px",
+        fontWeight:'300',
+        marginLeft: "-460px",
         marginTop: "-350px",
       }}
     >
@@ -161,17 +161,17 @@ function Toptwenty() {
         <table>
           <thead style={{ color: "gray" }}>
             <tr>
-              <th className="header-number">#</th>
-              <th className="header-track">Track</th>
-              <th className="header-artist">Artists</th>
-              <th className="header-album">Album</th>
-              <th className="header-action">Action</th>
+              <th className="header-number" style={{fontWeight:'300'}}>#</th>
+              <th className="header-track " style={{fontWeight:'300'}}>Track</th>
+              <th className="header-artist" style={{fontWeight:'300'}}>Artists</th>
+              <th className="header-album" style={{fontWeight:'300'}}>Album</th>
+              <th className="header-action" style={{fontWeight:'300'}}>Action</th>
             </tr>
           </thead>
           <tbody>
             {getData.map((obj, index) => (
               <tr key={index}>
-                <td className="song-number" style={{ color: "#fff" }}>
+                <td className="song-number" style={{ color: "#fff" ,fontWeight:'300'}}>
                   {index + 1}
                 </td>
                 <td className="song-track">
@@ -180,7 +180,7 @@ function Toptwenty() {
                       src={obj.thumbnail}
                       className="track-thumbnail"
                       alt="Track Thumbnail"
-                      style={{ height: "45px", width: "45px" }}
+                      style={{ height: "45px", width: "45px" ,fontWeight:'300'}}
                     />
                   </div>
                 </td>
@@ -235,7 +235,8 @@ function Toptwenty() {
           height: "50px",
           width: "145px",
           marginBottom: "30px",
-          color:'white'
+          color:'white',
+          fontWeight:'300'
         }}
       >
         Show More
