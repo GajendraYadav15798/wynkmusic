@@ -353,16 +353,7 @@ function SecondaryNavbar() {
             </Link>
           </li>
           <li className="list-group-item">
-            <Link
-              to="/updatepassword"
-              style={{
-                textDecoration: "none",
-                color: "gray",
-                fontWeight: "400",
-              }}
-            >
-              UpdatePassword
-            </Link>
+           
           </li>
         </ul>
       </nav>

@@ -39,7 +39,7 @@ function Login() {
         //   onNameHandler(result.data.data.name);
         //   console.log(result.data.token);
         //   console.log(result.data.data.name);
-        localStorage.setItem('name',result.data.data.user.name);
+          localStorage.setItem('name',result.data.data.name);
           localStorage.setItem('token',result.data.token);
           navigate('/');
       }).catch((error) => {

@@ -303,6 +303,7 @@ Link {
 }
 
 
+
 /* Assuming you have a CSS file linked to your React component */
 
 /* Add this media query to target smaller screens */
@@ -315,9 +316,9 @@ Link {
   }
 
   .log img {
-    margin-top: 15px;
-    margin-left: 15px;
-    width: 82px; /* Remove margin-left */
+    margin-top: -5px;
+    margin-left: 60px;
+    width: 60px; /* Remove margin-left */
   }
 
   .appSearchNavbar {
