@@ -145,7 +145,7 @@ const styles = {
         backgroundColor: "#1B1B1C",
         border: "none",
         outline: "none",
-        color: "#fff", // Change input text color to white
+        color: "#fff", 
     },
     button: {
         width: "30%",
