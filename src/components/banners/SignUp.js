@@ -1,9 +1,8 @@
-import React from "react";
-import { useState } from "react";
-import axios from "axios";
+import React, { useState } from "react";
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
-import { useNavigate } from "react-router-dom";
-function SignUp() {
+const SignUp = () => {
   const [getData, setData] = useState({
     name: "",
     email: "",
@@ -34,11 +33,11 @@ function SignUp() {
       return;
     }
 
-    axios.post('https://academics.newtonschool.co/api/v1/user/signup',getData, {
-            headers: {
-                projectID: 'f104bi07c490'
-            }
-      })
+    axios.post('https://academics.newtonschool.co/api/v1/user/signup', getData, {
+      headers: {
+        projectID: 'f104bi07c490'
+      }
+    })
       .then((result) => {
         console.log(result);
         navigate("/login");
@@ -47,58 +46,141 @@ function SignUp() {
         setError("internal server error please try after sometime");
       });
   };
+
   return (
-    <form onSubmit={onSubmitHandler}>
-      <div className="container">
-        {getError && (
-          <div div className="alert alert-danger" role="alert">
-            {getError}
-          </div>
-        )}
-        <div className="header">
-          <div className="text">Sign Up</div>
-          <div className="underline"></div>
+    <div style={styles.loginContainer}>
+      <div style={styles.loginContent}>
+        <div style={styles.imageContainer}>
+          <img
+            src="http://localhost:3000/static/media/wynklogo.918bfa463ec67eabd035681b3130204f.svg"
+            alt="Sign Up Image"
+            style={{ position: 'relative', left: '100px', top: '-140px', height: '60px', width: '60px' }}
+          />
         </div>
-        <div className="inputs">
-          <div className="input">
-           
+        <form style={styles.loginForm} onSubmit={onSubmitHandler}>
+          {getError && (
+            <div className="alert alert-danger" role="alert">
+              {getError}
+            </div>
+          )}
+          <h2 style={styles.title}>Sign Up</h2>
+          <p style={styles.subTitle}>
+            Create an account to get started
+          </p>
+
+          <div style={styles.formGroup}>
             <input
               type="text"
-              placeholder="User Name "
               value={getData.name}
               onChange={onChangeHandler}
+              required
+              placeholder="UserName"
+              style={styles.input}
               name="name"
             />
           </div>
-          <div className="input">
-          
+          <div style={styles.formGroup}>
             <input
               type="email"
-              placeholder="Email"
               value={getData.email}
               onChange={onChangeHandler}
+              required
+              placeholder="Email"
+              style={styles.input}
               name="email"
             />
           </div>
-          <div className="input">
-           
+          <div style={styles.formGroup}>
             <input
               type="password"
-              placeholder="Password"
               value={getData.password}
               onChange={onChangeHandler}
+              required
+              placeholder="Password"
+              style={styles.input}
               name="password"
             />
           </div>
-        </div>
-        <div className="submit_container">
-          <button className="submit">Sign Up</button>
-          <button className="submit-1" onClick={handleLogin}>
+          <button type="submit" style={{ width: '40%', padding: "10px", position: 'relative', top: '1px', borderRadius: "5px" }}>
+            Sign Up
+          </button>
+          <button
+            type="button"
+            style={{ ...styles.button, marginLeft: "10px" }} onClick={handleLogin}
+          >
             Login
           </button>
-        </div>
+          <br /> {/* Add a line break here */}
+        </form>
       </div>
-    </form>
+    </div>
   );
-}
+};
+
+const styles = {
+  loginContainer: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+  },
+  loginContent: {
+    display: "flex",
+    maxWidth: "600px",
+  },
+  imageContainer: {
+    flex: "0 0 40%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    position: 'relative',
+    top: '20px'
+  },
+  loginForm: {
+    flex: "0 0 60%",
+    marginLeft: "20px",
+  },
+  title: {
+    marginBottom: "10px",
+    fontSize: "24px",
+    textAlign: "center",
+    color: "#F7F5F5",
+  },
+  subTitle: {
+    marginBottom: "20px",
+    fontSize: "16px",
+    textAlign: "center",
+    color: "#666",
+  },
+  formGroup: {
+    marginBottom: "15px",
+  },
+  label: {
+    display: "block",
+    marginBottom: "5px",
+  },
+  input: {
+    width: "100%",
+    padding: "8px",
+    boxSizing: "border-box",
+    borderRadius: "4px",
+    backgroundColor: "#1B1B1C",
+    border: "none",
+    outline: "none",
+    color: "#fff", // Change input text color to white
+  },
+  button: {
+    width: "30%",
+    padding: "10px",
+    backgroundColor: "#F6F6F6",
+    color: "#0C0F12",
+    border: "none",
+    borderRadius: "5px",
+    cursor: "pointer",
+    textAlign: "center",
+    marginRight: "auto",
+    marginLeft: "70px",
+  },
+};
+
 export default SignUp;
