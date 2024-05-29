@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { border, borderRadius, height, width } from "@mui/system";
 
 const SignUp = () => {
   const [getData, setData] = useState({
@@ -51,10 +52,16 @@ const SignUp = () => {
     <div style={styles.loginContainer}>
       <div style={styles.loginContent}>
         <div style={styles.imageContainer}>
+        <img
+        src="https://img.wynk.in/unsafe/250x250/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1663065192/srch_gkdigital_ING501801727.jpg"
+        alt="Another Image"
+        style={{ position: 'relative', bottom: '55px', right: '-30px', top:'-75px',height: '360px',width: '260px',marginTop:'125px',borderRadius:'12px' }}
+    />
+
           <img
             src="http://localhost:3000/static/media/wynklogo.918bfa463ec67eabd035681b3130204f.svg"
             alt="Sign Up Image"
-            style={{ position: 'relative', left: '100px', top: '-140px', height: '60px', width: '60px' }}
+            style={{ position: 'relative', left: '70px', top: '-115px', height: '60px', width: '60px' }}
           />
         </div>
         <form style={styles.loginForm} onSubmit={onSubmitHandler}>
@@ -75,7 +82,7 @@ const SignUp = () => {
               onChange={onChangeHandler}
               required
               placeholder="UserName"
-              style={styles.input}
+              style={{ ...styles.input, width: '250px' }} // Increase width here
               name="name"
             />
           </div>
@@ -86,7 +93,7 @@ const SignUp = () => {
               onChange={onChangeHandler}
               required
               placeholder="Email"
-              style={styles.input}
+              style={{ ...styles.input, width: '250px' }} // Increase width here
               name="email"
             />
           </div>
@@ -97,16 +104,16 @@ const SignUp = () => {
               onChange={onChangeHandler}
               required
               placeholder="Password"
-              style={styles.input}
+              style={{ ...styles.input, width: '250px' }} // Increase width here
               name="password"
             />
           </div>
-          <button type="submit" style={{ width: '40%', padding: "10px", position: 'relative', top: '1px', borderRadius: "5px" }}>
+          <button type="submit" style={{ width: '25%', padding: "10px", position: 'relative', top: '1px', borderRadius: "5px",marginLeft:'35px' }}>
             Sign Up
           </button>
           <button
             type="button"
-            style={{ ...styles.button, marginLeft: "10px" }} onClick={handleLogin}
+            style={{ ...styles.button, marginLeft: "10px",width: "25%" }} onClick={handleLogin}
           >
             Login
           </button>
@@ -122,11 +129,24 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "100vh",
+    
+    border:'1px solid black',
+    borderRadius:'10px',
+    marginTop:'30px',
+    marginBottom:'320px',
+    height:'360px',
+    width:'550px',
+    position:'relative',
+    left:'470px',
+    top:'165px',
+    backgroundColor:'#161C25'
+    
+
   },
   loginContent: {
     display: "flex",
-    maxWidth: "600px",
+    Width: "600px",
+    marginLeft:'-15px'
   },
   imageContainer: {
     flex: "0 0 40%",
@@ -134,23 +154,31 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     position: 'relative',
-    top: '20px'
+    top: '15px',
+    left:'-15px',
+    borderRadius:'12px',
+    
+
   },
   loginForm: {
     flex: "0 0 60%",
-    marginLeft: "20px",
+    marginLeft: "-20px",
+    marginTop:'100px',
+    
   },
   title: {
     marginBottom: "10px",
     fontSize: "24px",
     textAlign: "center",
     color: "#F7F5F5",
+    marginRight:'105px'
   },
   subTitle: {
     marginBottom: "20px",
     fontSize: "16px",
     textAlign: "center",
     color: "#666",
+    marginRight:'105px'
   },
   formGroup: {
     marginBottom: "15px",
@@ -179,7 +207,7 @@ const styles = {
     cursor: "pointer",
     textAlign: "center",
     marginRight: "auto",
-    marginLeft: "70px",
+    marginLeft: "10px",
   },
 };
 

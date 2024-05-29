@@ -61,11 +61,11 @@ function Toptwenty() {
         src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_believe/20240506141047347/3617387818721/1714998628487/resources/3617387818721.jpg"
         style={{
           marginTop: "75px",
-          height: "395px",
+          height: "300px",
           borderRadius: "25px",
           paddingTop: "15px",
-          height: "329px",
-          width: "325px",
+          height: "250px",
+         
           marginLeft:'-645px'
         }}
       />
@@ -75,7 +75,7 @@ function Toptwenty() {
         color: "#FFFFFF",
         fontWeight:'300',
         marginLeft: "-460px",
-        marginTop: "-350px",
+        marginTop: "-290px",
       }}
     >
     Bebe Bapu
@@ -83,8 +83,8 @@ function Toptwenty() {
     <h5
       style={{
         color: "#818A8C",
-        fontSize: "20px",
-        marginLeft: "-500px",
+        fontWeight:'300',
+        marginLeft: "-530px",
         marginTop: "-25px",
       }}
     >
@@ -104,13 +104,14 @@ function Toptwenty() {
         justifyContent: "center",
         marginLeft: "-400px",
         cursor: "pointer",
+        width:'180px'
       }}
     >
       <FaPlay
         style={{ marginLeft: "5px", color: "white", marginRight: "25px" }}
       />{" "}
       {/* Play icon */}
-      <span style={{ fontSize: "25px", color: "white", }}>Play Songs</span>
+      <span style={{ fontSize:'18px', color: "white" }}>Play Songs</span>
     </button>
     <button
       style={{
@@ -121,11 +122,13 @@ function Toptwenty() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        marginLeft: "-50px",
-        marginTop: "-45px",
+        marginLeft: "-30px",
+        marginTop: "-50px",
         cursor: "pointer",
         color: "#818A8C",
         border: "1px solid white",
+        width:'180px'
+       
       }}
     >
       <span style={{ marginRight: "5px", fontSize: "25px" }}>Follow</span>
@@ -229,14 +232,14 @@ function Toptwenty() {
 
         <button
         style={{
-          background: "red",
+          background: "#FF5D69",
           borderRadius: "45px",
           marginLeft: "545px",
           height: "50px",
           width: "145px",
           marginBottom: "30px",
           color:'white',
-          fontWeight:'300'
+          fontWeight:'600'
         }}
       >
         Show More

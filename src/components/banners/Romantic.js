@@ -128,6 +128,7 @@ function Romantic() {
             cursor: "pointer",
             color: "#818A8C",
             border: "1px solid white",
+            width:'180px'
           }}
         >
           <span style={{ marginRight: "5px", fontSize: "25px" }}>Follow</span>
@@ -265,12 +266,13 @@ function Romantic() {
 
         <button
           style={{
-            background: "red",
+            background: "#FF5D69",
             borderRadius: "45px",
             marginLeft: "805px",
             height: "50px",
             width: "145px",
             marginBottom: "30px",
+            fontWeight:'600',color:'white'
           }}
         >
           Show More

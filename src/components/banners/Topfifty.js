@@ -128,6 +128,7 @@ function Topfifty() {
             cursor: "pointer",
             color: "#818A8C",
             border: "1px solid white",
+            width:'180px'
           }}
         >
           <span style={{ marginRight: "5px", fontSize: "25px",fontWeight:'400' }}>Follow</span>
@@ -265,13 +266,14 @@ function Topfifty() {
 
         <button
           style={{
-            background: "red",
+            background: "#FF5D69",
             borderRadius: "45px",
             marginLeft: "905px",
             height: "50px",
             width: "145px",
             marginBottom: "30px",
-            fontWeight:'300'
+            fontWeight:'500',
+            color:'white'
           }}
         >
           Show More

@@ -1,29 +1,31 @@
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
- 
 }
 
+/* Logo */
 .logo-container {
   display: flex;
   align-items: center;
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  margin-left: 100px;
+  margin-left: 20px;
 }
 
 .brand-name {
   margin-left: 10px;
-  font-size: 28px;
+  font-size: 24px;
   color: beige;
 }
 
+/* Search */
 .search-container {
   display: flex;
   align-items: center;
@@ -34,55 +36,35 @@
   border: 1px solid gray;
   border-radius: 45px;
   padding: 8px 40px 8px 15px;
-  font-size: 26px;
-  width: 550px;
-  height: 60px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  height: 40px;
   text-align: center;
   background-color: #232323;
 }
 
 .search-icon {
   position: absolute;
-  left: 20px;
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 30px;
+  font-size: 20px;
   color: beige;
 }
 
-.rupee-icon {
-  margin-left: 10px;
-  color: antiquewhite;
-  font-size: 30px;
-}
-
+/* Icons and Texts */
+.rupee-icon,
+.user-icon,
+.menu-icon,
+.login-signup,
 .subscription-text {
-  margin-left: 10px;
-  font-size: 25px;
-  color: white;
-}
-
-.user-icon {
-  margin-left: 10px;
-  color: azure;
-  font-size: 30px;
-}
-
-.login-signup {
-  margin-left: 10px;
-  font-size: 30px;
-  color: blanchedalmond;
-  cursor: pointer;
-}
-
-.menu-icon {
-  color: azure;
-  font-size: 25px;
-  margin-left: 10px;
+  display: none;
 }
 
 /* Media Queries for responsiveness */
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 769px) {
+  /* Desktop Styles */
   .logo {
     width: 80px;
     height: 80px;
@@ -90,30 +72,29 @@
   }
   
   .brand-name {
-    font-weight: 300;
+    font-size: 28px;
   }
   
   .search-input {
     width: 400px;
-    font-weight: 300;
+    font-size: 26px;
   }
   
   .search-icon {
-    font-weight: 300;
+    font-size: 30px;
   }
   
   .rupee-icon,
   .user-icon,
-  .menu-icon {
-    font-weight: 300;
-  }
-  
-  .login-signup {
-    font-weight: 300;
+  .menu-icon,
+  .login-signup,
+  .subscription-text {
+    display: inline-block;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Tablet Styles */
   .logo {
     width: 60px;
     height: 60px;
@@ -121,26 +102,17 @@
   }
   
   .brand-name {
-    font-weight: 300;
+    font-size: 22px;
   }
   
   .search-input {
-    width: 300px;
-    font-size: 16px;
+    width: 250px;
+    font-size: 18px;
   }
   
   .search-icon {
-    font-weight: 300;
-  }
-  
-  .rupee-icon,
-  .user-icon,
-  .menu-icon {
-    font-weight: 300;
-  }
-  
-  .subscription-text,
-  .login-signup {
-    display: none;
+    font-size: 20px;
   }
 }
+
+/* Mobile Styles (Already defined above) */

@@ -59,9 +59,9 @@ function Trending() {
             <span style={{ fontWeight: '400' }}>.</span>Wynk Top 50
           </span>
           <br />
-          <img src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/wynk-music-cms/srch_universalmusic/00602547587459_20240227155540404/1709054723971/15UMGIM59807_T1_cvrart.jpg" style={{marginTop:'75px',height:'395px',borderRadius:'5px'}}/>
+          <img src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/65a8ac61703e005423a9f429/COLLECTION_5739648358264.png" style={{marginTop:'110px',height:'280px',borderRadius:'25px'}}/>
         </p>
-        <h1 style={{ color: "#FFFFFF", fontWeight: '300', marginLeft: "650px",marginTop:'-350px' }}>
+        <h1 style={{ color: "#FFFFFF", fontWeight: '300', marginLeft: "650px",marginTop:'-270px' }}>
         What Do You Mean?
         </h1>
         <h5
@@ -110,6 +110,7 @@ function Trending() {
             cursor: "pointer",
             color: "#818A8C",
             border: "1px solid white",
+            width:'180px'
           }}
         >
           <span style={{ fontSize: "45px", marginRight: "15px" }}>+</span>
@@ -175,7 +176,7 @@ function Trending() {
       )}
       <button
         style={{
-          backgroundColor: "red",
+          backgroundColor: "#FF5D69",
           borderRadius: "40px",
           color: "white",
           padding: "10px 20px",
@@ -184,7 +185,7 @@ function Trending() {
           marginLeft:'650px',
           height:'56px',
           width:'186px',
-          fontSize:'26px',
+          fontWeight:'600',
           marginBottom:'35px'
         }}
        

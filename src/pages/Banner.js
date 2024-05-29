@@ -67,10 +67,10 @@ const Banner = () => {
           <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/665069fa5c3d3b2ab05d7f90/BANNER_26157792887009.png" alt="" style={imageStyle} />
         </div>
         <div>
-          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/tile/artwork/1715771195261_full-album-featuredbanner_(6).jpg" alt="" style={imageStyle} />
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/664f3f6f6bb30d618035f61a/BANNER_3880114223922.jpeg" alt="" style={imageStyle} />
         </div>
         <div>
-          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/665053bc34a219283eb58d0e/BANNER_20423215653118.jpg" alt="" style={imageStyle} />
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/tile/artwork/1716810153830_fresh-arrivals-featuredbanner_(19).jpg" alt="" style={imageStyle} />
         </div>
         <div>
           <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/665058d8d5643d32b813759e/BANNER_9185336311950.jpg" alt="" style={imageStyle} />

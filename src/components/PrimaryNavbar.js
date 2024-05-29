@@ -105,9 +105,9 @@ function PrimaryNavbar() {
             <input
               type="text"
               placeholder="Search Songs"
-              style={{ color: "white" }}
+              style={{ color: "white",fontWeight:'300' }}
               onChange={onSearchDetails}
-            />
+              />
             <div
               className="searchIcon-navbar"
               style={{ marginLeft: "35px", marginTop: "-30px" }}
@@ -153,7 +153,7 @@ function PrimaryNavbar() {
           >
             {!localStorage.getItem("token") ? (
               <button
-                style={{ background: "blue", color: "white" }}
+                style={{ background: "#1C1C1C", color: "white" }}
                 onClick={handleLogin}
               >
                 Log In
@@ -162,7 +162,7 @@ function PrimaryNavbar() {
               <button
                 color="inherit"
                 style={{
-                  background: "blue",
+                  background: "#1C1C1C",
                   color: "white",
                   fontWeight: "400",
                 }}
@@ -284,7 +284,7 @@ function PrimaryNavbar() {
                   onClick={handleMenuClick}
                   size="small"
                   sx={{ ml: 2 }}
-                  aria-controls={open ? "account-menu" : undefined}
+                  aria-controls={open ? "account-menu" : localStorage.getItem('name')}
                   aria-haspopup="true"
                   aria-expanded={open ? "true" : undefined}
                 >

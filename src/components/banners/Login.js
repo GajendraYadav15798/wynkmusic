@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { width } from "@mui/system";
+import { VscWordWrap } from "react-icons/vsc";
 
 const Login = () => {
     const [getData, setData] = useState({
@@ -35,7 +37,8 @@ const Login = () => {
                 projectID: 'f104bi07c490'
             }
         }).then((result) => {
-            localStorage.setItem('name', result.data.data.name);
+            localStorage.setItem('name', result.data.data.user.name);
+            console.log(result.data.data.user.name);
             localStorage.setItem('token', result.data.token);
             navigate('/');
         }).catch((error) => {
@@ -47,17 +50,23 @@ const Login = () => {
         <div style={styles.loginContainer}>
             <div style={styles.loginContent}>
                 <div style={styles.imageContainer}>
+                <img
+                        src="https://img.wynk.in/unsafe/250x250/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1663065192/srch_gkdigital_ING501801727.jpg"
+                        alt="Another Image"
+                        style={{ position: 'relative', top: '15px', right: '-40px', top: '12px', height: '400px', width: '260px',marginTop:'125px',borderRadius:'12px' }}
+                    />
                     <img
                         src="http://localhost:3000/static/media/wynklogo.918bfa463ec67eabd035681b3130204f.svg"
                         alt="Login Image"
-                        style={{ position: 'relative', top: '-115px', left: '145px', top: '-90px', height: '60px', width: '60px' }}
+                        style={{ position: 'relative', top: '-100px', left: '95px', top: '-50px', height: '60px', width: '60px' }}
                     />
+                    
                 </div>
                 <form style={styles.loginForm} onSubmit={onSubmitHandler}>
                     {getError && <div className="alert alert-danger" role="alert">{getError}</div>}
                     <h2 style={styles.title}>Login/Sign Up</h2>
                     <p style={styles.subTitle}>
-                        Get a personalized experience, and access all your music
+                        Get a personalized experience, and access <br/>all your music
                     </p>
                     <div style={styles.formGroup}>
                         <input
@@ -102,7 +111,14 @@ const styles = {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh",
+        height: "400px",
+        width:'600px',
+        border:'1px solid black',
+        marginTop:'200px',
+        marginBottom:"100px",
+        marginLeft:'450px',borderRadius:'12px',
+        backgroundColor:'#161C25'
+       
     },
     loginContent: {
         display: "flex",
@@ -113,25 +129,34 @@ const styles = {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        position:'relative',
+        right:'110px',
+        top:'-75px'
     },
     loginForm: {
         flex: "0 0 60%",
-        marginLeft: "20px",
+        marginLeft: "-12px",
+        marginTop:'100px'
     },
     title: {
         marginBottom: "10px",
         fontSize: "24px",
         textAlign: "center",
         color: "#F7F5F5",
+        marginLeft:'-190px'
     },
     subTitle: {
         marginBottom: "20px",
         fontSize: "16px",
         textAlign: "center",
         color: "#666",
+        marginLeft:'-185px',
+        wordWrap: 'break-word'
     },
     formGroup: {
         marginBottom: "15px",
+        marginLeft:'-75px',
+        width:'338px'
     },
     label: {
         display: "block",
@@ -157,7 +182,8 @@ const styles = {
         cursor: "pointer",
         textAlign: "center",
         marginRight: "auto",
-        marginLeft: "70px",
+        marginLeft: "-35px",
+        margin: "15px",
     },
 };
 

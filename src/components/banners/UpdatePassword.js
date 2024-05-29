@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { TextField, Button, Typography, Snackbar } from '@mui/material';
 import MuiAlert from '@mui/material/Alert';
 import axios from 'axios';
-import { BorderClear } from '@mui/icons-material';
 
 function UpdatePassword() {
     const [formData, setFormData] = useState({
@@ -55,88 +54,87 @@ function UpdatePassword() {
         setSnackbarOpen(false);
     };
 
-    const formStyle = {
-        background: '#f0e68c',
-        color: 'black',
-        width: '450px',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        borderRadius: '5px',
-        padding: '20px',
-        boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
-        marginTop: '130px',
-        marginBottom: '50px',
-        border: '5px solid',
-        animation: 'disco 2s infinite',
-        borderRadius:'45px'
+    const commonTextStyle = {
+        color: '#80848A' // Updated text color
     };
 
-    const inputStyle = {
-        marginBottom: '15px',
-        borderRadius:'45px',
-        color:'white'
-    };
-
-    const buttonStyle = {
-        color: '#FFE2C3',
-        backgroundColor: '#FF245B',
-        display: 'block',
-        width: '195px',
-        borderRadius:'45px',
-        marginLeft:'135px',
-        
-    };
-
-    const snackbarStyle = {
-        width: '100%',
-        color: 'white'
+    const placeholderStyle = {
+        color: '#1C1C1B' // Placeholder text color
     };
 
     return (
-        <div style={{marginTop:'175px'}}>
-           
-            <form onSubmit={handleSubmit} style={formStyle}>
-                <Typography variant="h6" style={{ color: '#ffffff', textAlign: 'center' ,fontWeight:'500',color:'#2f4f4f'}}>Update Password</Typography>
+        <div style={{ marginTop: '175px' }}>
+            <form 
+                onSubmit={handleSubmit} 
+                style={{
+                    background: '#030404',
+                    color: '#80848A', // Updated text color
+                    width: '450px',
+                    marginLeft: 'auto',
+                    marginRight: 'auto',
+                    borderRadius: '5px',
+                    padding: '20px',
+                    boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+                    marginTop: '130px',
+                    marginBottom: '50px',
+                    animation: 'disco 2s infinite'
+                }}
+            >
+                <Typography variant="h6" style={{ textAlign: 'center', fontWeight: '500', ...commonTextStyle }}>
+                    Update Password
+                </Typography>
                 <TextField
-                    label="Name"
                     name="name"
+                    placeholder="Name"
                     value={formData.name}
                     onChange={handleChange}
                     fullWidth
                     margin="normal"
-                    style={inputStyle} />
+                    style={{ ...commonTextStyle, border: 'none' }} 
+                    InputLabelProps={{ style: { display: 'none' } }} // Hide label
+                    InputProps={{ style: { ...commonTextStyle, '::placeholder': placeholderStyle } }} // Updated input text color and placeholder color
+                />
                 <TextField
-                    label="Email"
                     name="email"
+                    placeholder="Email"
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
                     fullWidth
                     margin="normal"
-                    style={inputStyle} />
+                    style={{ ...commonTextStyle, border: 'none' }} 
+                    InputLabelProps={{ style: { display: 'none' } }} // Hide label
+                    InputProps={{ style: { ...commonTextStyle, '::placeholder': placeholderStyle } }} // Updated input text color and placeholder color
+                />
                 <TextField
-                    label="Current Password"
                     name="currentPassword"
+                    placeholder="Current Password"
                     type="password"
                     value={formData.currentPassword}
                     onChange={handleChange}
                     fullWidth
                     margin="normal"
-                    style={inputStyle} />
+                    style={{ ...commonTextStyle, border: 'none' }} 
+                    InputLabelProps={{ style: { display: 'none' } }} // Hide label
+                    InputProps={{ style: { ...commonTextStyle, '::placeholder': placeholderStyle } }} // Updated input text color and placeholder color
+                />
                 <TextField
-                    label="New Password"
                     name="newPassword"
+                    placeholder="New Password"
                     type="password"
                     value={formData.newPassword}
                     onChange={handleChange}
                     fullWidth
                     margin="normal"
-                    style={inputStyle}
-                    
+                    style={{ ...commonTextStyle, border: 'none' }}
+                    InputLabelProps={{ style: { display: 'none' } }} // Hide label
+                    InputProps={{ style: { ...commonTextStyle, '::placeholder': placeholderStyle } }} // Updated input text color and placeholder color
                 />
-                <Button type="submit" variant="contained" style={buttonStyle}>Update Password</Button>
+                <Button type="submit" variant="contained" style={{ ...commonTextStyle, color: '#0C0F12', backgroundColor: '#EEEEEE', display: 'block', width: '195px', borderRadius: '45px', marginLeft: '135px' }}>
+                    Update Password
+                </Button>
                 <Snackbar open={snackbarOpen} autoHideDuration={6000} onClose={handleSnackbarClose}>
-                    <MuiAlert onClose={handleSnackbarClose} severity={snackbarSeverity} sx={snackbarStyle} style={{color:'#1B1B1C'}}>
+                    <MuiAlert onClose={handleSnackbarClose} severity={snackbarSeverity} sx={{ ...commonTextStyle, width: '100%' }}>
                         {snackbarMessage}
                     </MuiAlert>
                 </Snackbar>

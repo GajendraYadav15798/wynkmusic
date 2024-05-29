@@ -58,22 +58,22 @@ function Trending() {
             <span style={{ fontSize: "55px" }}>.</span>Wynk Top 50
           </span>
           <br />
-          <img src="https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf90b047ae38c3e33a1cad.jpg" style={{marginTop:'75px',height:'395px',borderRadius:'15px'}}/>
+          <img src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():strip_exif():format(webp)/http://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/661fdaa6b612d6744ba17e46/COLLECTION_560430366966705.jpeg" style={{marginTop:'105px',height:'295px',borderRadius:'15px'}}/>
         </p>
-        <h1 style={{ color: "#FFFFFF",  marginLeft: "650px",marginTop:'-350px',fontWeight: '400' }}>
-          Wynk Trending Songs
+        <h1 style={{ color: "#FFFFFF",  marginLeft: "520px",marginTop:'-280px',fontWeight: '300', }}>
+        Best Of Kaka
         </h1>
         <h5
           style={{
             color: "#818A8C",
-            fontSize: "20px",
-            marginLeft: "650px",
+            fontWeight: "400",
+            marginLeft: "520px",
             marginTop: "-25px",
           }}
         >
           Made by Wynk
         </h5>
-        <p style={{ marginLeft: "650px", marginTop: "-25px", color: "gray",fontWeight: '400' }}>
+        <p style={{ marginLeft: "520px", marginTop: "-25px", color: "gray",fontWeight: '400' }}>
           44.5 L Followers • 100 Songs • 6 h 34 min
         </p>
         <button
@@ -85,7 +85,7 @@ function Trending() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            marginLeft: "650px",
+            marginLeft: "510px",
             cursor: "pointer",
           }}
         >
@@ -93,7 +93,7 @@ function Trending() {
             style={{ marginLeft: "5px", color: "white", marginRight: "25px" }}
           />{" "}
           {/* Play icon */}
-          <span style={{ fontSize: "25px", color: "white",fontWeight: '400' }}>Play Songs</span>
+          <span style={{ fontSize: "25px", color: "white",fontWeight: '300' }}>Play Songs</span>
         </button>
         <button
           style={{
@@ -104,11 +104,12 @@ function Trending() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            marginLeft: "850px",
+            marginLeft: "720px",
             marginTop: "-45px",
             cursor: "pointer",
             color: "#818A8C",
             border: "1px solid white",
+            width:'180px'
           }}
         >
           <span style={{ fontSize: "45px", marginRight: "15px" }}>+</span>
@@ -174,16 +175,16 @@ function Trending() {
       )}
       <button
         style={{
-          backgroundColor: "red",
+          backgroundColor: "#FF5D69",
           borderRadius: "40px",
-          color: "white",
+          
           padding: "10px 20px",
           marginTop: "60px",
           cursor: "pointer",
           marginLeft:'700px',
           height:'56px',
           width:'186px',
-          fontSize:'26px',
+          fontWeight:'600',
           marginBottom:'45px',color:'white',fontWeight: '400'
         }}
        
