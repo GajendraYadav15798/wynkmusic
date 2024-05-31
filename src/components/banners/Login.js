@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { width } from "@mui/system";
-import { VscWordWrap } from "react-icons/vsc";
 
 const Login = () => {
     const [getData, setData] = useState({
@@ -47,26 +45,25 @@ const Login = () => {
     };
 
     return (
-        <div style={styles.loginContainer}>
-            <div style={styles.loginContent}>
-                <div style={styles.imageContainer}>
-                <img
+        <div style={styles.loginContainer} className="loginContainer">
+            <div style={styles.loginContent} className="loginContent">
+                <div style={styles.imageContainer} className="imageContainer">
+                    <img
                         src="https://img.wynk.in/unsafe/250x250/filters:no_upscale():strip_exif():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/music/1663065192/srch_gkdigital_ING501801727.jpg"
                         alt="Another Image"
-                        style={{ position: 'relative', top: '15px', right: '-40px', top: '12px', height: '400px', width: '260px',marginTop:'125px',borderRadius:'12px' }}
+                        style={styles.mainImage}
                     />
                     <img
                         src="http://localhost:3000/static/media/wynklogo.918bfa463ec67eabd035681b3130204f.svg"
                         alt="Login Image"
-                        style={{ position: 'relative', top: '-100px', left: '95px', top: '-50px', height: '60px', width: '60px' }}
+                        style={styles.logoImage}
                     />
-                    
                 </div>
-                <form style={styles.loginForm} onSubmit={onSubmitHandler}>
+                <form style={styles.loginForm} onSubmit={onSubmitHandler} className="loginForm">
                     {getError && <div className="alert alert-danger" role="alert">{getError}</div>}
                     <h2 style={styles.title}>Login/Sign Up</h2>
                     <p style={styles.subTitle}>
-                        Get a personalized experience, and access <br/>all your music
+                        Get a personalized experience, and access <br />all your music
                     </p>
                     <div style={styles.formGroup}>
                         <input
@@ -99,7 +96,6 @@ const Login = () => {
                     >
                         Sign Up
                     </button>
-                    <br /> {/* Add a line break here */}
                 </form>
             </div>
         </div>
@@ -111,52 +107,68 @@ const styles = {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "400px",
-        width:'600px',
-        border:'1px solid black',
-        marginTop:'200px',
-        marginBottom:"100px",
-        marginLeft:'450px',borderRadius:'12px',
-        backgroundColor:'#161C25'
-       
+        height: "auto",
+        width: "600px",
+        border: "1px solid black",
+        marginTop: "200px",
+        marginBottom: "100px",
+        marginLeft: "auto",
+        marginRight: "auto",
+        borderRadius: "12px",
+        backgroundColor: "#161C25",
     },
     loginContent: {
         display: "flex",
-        maxWidth: "600px", // Decreased maxWidth here
+        maxWidth: "600px",
     },
     imageContainer: {
         flex: "0 0 40%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        position:'relative',
-        right:'110px',
-        top:'-75px'
+        position: "relative",
+        right: "110px",
+        top: "-75px",
+    },
+    mainImage: {
+        position: "relative",
+        top: "15px",
+        height: "400px",
+        width: "260px",
+        marginTop: "125px",
+        borderRadius: "12px",
+    },
+    logoImage: {
+        position: "relative",
+        top: "-50px",
+        left: "95px",
+        height: "60px",
+        width: "60px",
     },
     loginForm: {
         flex: "0 0 60%",
         marginLeft: "-12px",
-        marginTop:'100px'
+        marginTop: "100px",
     },
     title: {
         marginBottom: "10px",
         fontSize: "24px",
         textAlign: "center",
         color: "#F7F5F5",
-        marginLeft:'-190px'
+        marginLeft: "-190px",
     },
     subTitle: {
         marginBottom: "20px",
         fontSize: "16px",
         textAlign: "center",
         color: "#666",
-        marginLeft:'-185px',
-        wordWrap: 'break-word'
+        marginLeft: "-185px",
+        wordWrap: "break-word",
     },
     formGroup: {
         marginBottom: "15px",
-        marginLeft:'-75px',
-        width:'338px'
+        marginLeft: "-75px",
+        width: "338px",
     },
     label: {
         display: "block",
@@ -170,7 +182,7 @@ const styles = {
         backgroundColor: "#1B1B1C",
         border: "none",
         outline: "none",
-        color: "#fff", 
+        color: "#fff",
     },
     button: {
         width: "30%",
@@ -186,5 +198,86 @@ const styles = {
         margin: "15px",
     },
 };
+
+// Add media queries to make the form responsive
+const mediaStyles = `
+  @media (max-width: 1024px) {
+    .loginContainer {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .loginContent {
+      flex-direction: column;
+      align-items: center;
+    }
+    .imageContainer {
+      margin-bottom: 20px;
+    }
+    .loginForm {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    .title, .subTitle {
+      margin-left: 0;
+    }
+    .formGroup {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .loginContainer {
+      width: 90%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .loginContent {
+      flex-direction: column;
+      align-items: center;
+    }
+    .imageContainer {
+      margin-bottom: 20px;
+    }
+    .loginForm {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+    .title, .subTitle {
+      margin-left: 0;
+    }
+    .formGroup {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  @media (max-width: 480px) {
+    .loginContainer {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .imageContainer img {
+      height: 200px;
+      width: 150px;
+    }
+    .loginForm {
+      width: 100%;
+    }
+    .input, .button {
+      width: 100%;
+    }
+    .title, .subTitle {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+`;
+
+const styleSheet = document.createElement("style");
+styleSheet.type = "text/css";
+styleSheet.innerText = mediaStyles;
+document.head.appendChild(styleSheet);
 
 export default Login;

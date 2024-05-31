@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { border, borderRadius, height, width } from "@mui/system";
 
 const SignUp = () => {
   const [getData, setData] = useState({
@@ -129,24 +128,21 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    
-    border:'1px solid black',
-    borderRadius:'10px',
-    marginTop:'30px',
-    marginBottom:'320px',
-    height:'360px',
-    width:'550px',
-    position:'relative',
-    left:'470px',
-    top:'165px',
-    backgroundColor:'#161C25'
-    
-
+    border: '1px solid black',
+    borderRadius: '10px',
+    marginTop: '30px',
+    marginBottom: '320px',
+    height: '360px',
+    width: '550px',
+    position: 'relative',
+    left: '470px',
+    top: '165px',
+    backgroundColor: '#161C25'
   },
   loginContent: {
     display: "flex",
-    Width: "600px",
-    marginLeft:'-15px'
+    width: "600px",
+    marginLeft: '-15px'
   },
   imageContainer: {
     flex: "0 0 40%",
@@ -155,30 +151,27 @@ const styles = {
     alignItems: "center",
     position: 'relative',
     top: '15px',
-    left:'-15px',
-    borderRadius:'12px',
-    
-
+    left: '-15px',
+    borderRadius: '12px',
   },
   loginForm: {
     flex: "0 0 60%",
     marginLeft: "-20px",
-    marginTop:'100px',
-    
+    marginTop: '100px',
   },
   title: {
     marginBottom: "10px",
     fontSize: "24px",
     textAlign: "center",
     color: "#F7F5F5",
-    marginRight:'105px'
+    marginRight: '105px'
   },
   subTitle: {
     marginBottom: "20px",
     fontSize: "16px",
     textAlign: "center",
     color: "#666",
-    marginRight:'105px'
+    marginRight: '105px'
   },
   formGroup: {
     marginBottom: "15px",
@@ -210,5 +203,57 @@ const styles = {
     marginLeft: "10px",
   },
 };
+
+// Add media queries to make the form responsive
+const mediaStyles = `
+  @media (max-width: 768px) {
+    .loginContainer {
+      width: 90%;
+      left: auto;
+      top: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .loginContent {
+      flex-direction: column;
+      align-items: center;
+    }
+    .imageContainer {
+      margin-bottom: 20px;
+      top: auto;
+      left: auto;
+    }
+    .loginForm {
+      margin-left: 0;
+      margin-top: 0;
+    }
+    .title, .subTitle {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 480px) {
+    .loginContainer {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .imageContainer img {
+      height: 200px;
+      width: 150px;
+    }
+    .loginForm {
+      width: 100%;
+    }
+    .input, .button {
+      width: 100%;
+    }
+  }
+`;
+
+const styleSheet = document.createElement("style");
+styleSheet.type = "text/css";
+styleSheet.innerText = mediaStyles;
+document.head.appendChild(styleSheet);
 
 export default SignUp;

@@ -73,7 +73,7 @@ const Banner = () => {
           <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/tile/artwork/1716810153830_fresh-arrivals-featuredbanner_(19).jpg" alt="" style={imageStyle} />
         </div>
         <div>
-          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/665058d8d5643d32b813759e/BANNER_9185336311950.jpg" alt="" style={imageStyle} />
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/665714e7aecc9109af2f41c6/BANNER_25816516955929.jpg" alt="" style={imageStyle} />
         </div>
       </Slider>
     </div>
