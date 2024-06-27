@@ -110,7 +110,7 @@ const styles = {
         height: "400px",
         width: "600px",
         border: "1px solid black",
-        marginTop: "300px",
+        marginTop: "220px",
         marginBottom: "100px",
         marginLeft: "auto",
         marginRight: "auto",
