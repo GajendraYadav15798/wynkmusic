@@ -55,25 +55,25 @@ const Banner = () => {
     <div className='barapp' style={{ background: 'black', position: 'relative', top: '95px' }}>
       <Slider {...settings}>
         <div>
-        <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/66473ee5d83710614a01960f/BANNER_34474852554275.png" alt="" style={imageStyle} />
+        <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/65a68ec7ed7dad04b5a74e4e/BANNER_94879319150057.png" alt="" style={imageStyle} />
         </div>
         <div>
-          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/660fd3c5b4f9e115a0f6c48a/BANNER_162814980521707.jpeg" alt="" style={imageStyle} />
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/667e7b2b1df2707511a165c0/BANNER_23105162642994.jpg" alt="" style={imageStyle} />
         </div>
         <div>
-          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/665053bc34a219283eb58d0e/BANNER_20423215653118.jpg" alt="" style={imageStyle} />
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/667e908709a83e21ae05d44e/BANNER_26069202389172.jpg" alt="" style={imageStyle} />
         </div>
         <div>
-          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/665069fa5c3d3b2ab05d7f90/BANNER_26157792887009.png" alt="" style={imageStyle} />
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/667e8fb40a816862f296ba1b/BANNER_22630803685798.jpg" alt="" style={imageStyle} />
         </div>
         <div>
-          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/664f3f6f6bb30d618035f61a/BANNER_3880114223922.jpeg" alt="" style={imageStyle} />
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/66740b4a1c80553f155bf696/BANNER_115781009988814.jpg" alt="" style={imageStyle} />
         </div>
         <div>
-          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/tile/artwork/1716810153830_fresh-arrivals-featuredbanner_(19).jpg" alt="" style={imageStyle} />
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/667eb2fd01fd9c087c7f9b13/BANNER_27281925731717.jpg" alt="" style={imageStyle} />
         </div>
         <div>
-          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/665714e7aecc9109af2f41c6/BANNER_25816516955929.jpg" alt="" style={imageStyle} />
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/667e8baec7019e1a5aef3d72/BANNER_278432527020294.jpg" alt="" style={imageStyle} />
         </div>
       </Slider>
     </div>
