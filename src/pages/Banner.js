@@ -4,6 +4,25 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+const CustomNextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: 'block',
+        fontSize: '75px', // Adjust the font size to increase arrow size
+        right: '10px',
+        zIndex: 1,
+      }}
+      onClick={onClick}
+    >
+      ➔
+    </div>
+  );
+};
+
 const Banner = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
@@ -29,6 +48,7 @@ const Banner = () => {
     autoplaySpeed: 2000,
     centerMode: !isMobile,
     variableWidth: !isMobile,
+    nextArrow: <CustomNextArrow />,
     responsive: [
       {
         breakpoint: 600,
@@ -55,7 +75,7 @@ const Banner = () => {
     <div className='barapp' style={{ background: 'black', position: 'relative', top: '95px' }}>
       <Slider {...settings}>
         <div>
-        <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/65a68ec7ed7dad04b5a74e4e/BANNER_94879319150057.png" alt="" style={imageStyle} />
+          <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/65a68ec7ed7dad04b5a74e4e/BANNER_94879319150057.png" alt="" style={imageStyle} />
         </div>
         <div>
           <img src="https://img.wynk.in/unsafe/880x307/filters:no_upscale():strip_exif():format(webp)/https://s3.ap-south-1.amazonaws.com/discovery-prod-arsenal/arsenal/artworks/667e7b2b1df2707511a165c0/BANNER_23105162642994.jpg" alt="" style={imageStyle} />
@@ -81,4 +101,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
